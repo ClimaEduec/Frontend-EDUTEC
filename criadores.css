@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Brown Sugar';
+    src: url('/fonte/Brown-Sugar.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow-Regular';
+    src: url('/fonte/Barlow-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --primary-text-color: rgba(0, 0, 0, 1);
+    --secondary-text-color: #FFFFFF;
+    --color-start: #FFFFFF;
+    --color-mid1: #B9C9DF;
+    --color-mid2: #C1D0E2;
+    --color-end: #7E9CC3;
+    --color-endb: #C7D1DE;
+    --white: #FFFFFF;
+    --purple: #9B59B6;
+}
+
+body {
+    background: linear-gradient(to left, var(--color-start) 0%, var(--color-endb) 100%);
+    color: var(--primary-text-color);
+    margin: 0;
+}
+
+
+
+main h2 {
+    color: var(--primary-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+main section h1 {
+    color: var(--primary-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+main section p {
+    color: var(--primary-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    padding: 40px 20px;
+}
+
+.explicacao{
+    margin-top: 140px;
+}
+
+.Criadores {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.esq, .dir {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+section img {
+    margin: 0 20px;
+    
+}
+
+
+h2{
+    font-family: 'Barlow-Regular';
+}
+
+p{
+    font-family: 'Barlow-Regular';
+}

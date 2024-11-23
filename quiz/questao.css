@@ -1,0 +1,244 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: rgba(0, 0, 0, 1);
+    --secondary-text-color: #FFFFFF;
+    --color-start: #FFFFFF;
+    --color-mid1: #B9C9DF;
+    --color-mid2: #C1D0E2;
+    --color-end: #7E9CC3;
+    --color-endb: #C7D1DE;
+    --white: #FFFFFF;
+    --green: #68a75b;
+    --red: #9c3535;
+}
+
+body.escuro {
+    --primary-text-color: #FFFFFF;
+    --secondary-text-color: rgba(0, 0, 0, 1);
+    --color-start: #96A9C2;
+    --color-mid1: #2B3D54;
+    --color-mid2: #2B3D54;
+    --color-end: #001228;
+    --color-endb: #173A59;
+}
+
+body,html {
+    width: 100vw;
+    height: 100vh;
+    background: image();
+    color: var(--primary-text-color);
+    font-size: 16px;
+}
+
+header {
+    background: linear-gradient(to left, var(--color-start) 0%, var(--color-mid1) 43%, var(--color-mid2) 57%, var(--color-end) 100%);
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav {
+    background: linear-gradient(to left, var(--color-start) 0%, var(--color-end) 100%);
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Alinha verticalmente a logo */
+}
+
+.logo img {
+    max-width: 5rem;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.link a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.link a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--secondary-text-color);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 5rem;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.link a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.link a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--secondary-text-color);
+}
+
+body {
+    background: image();
+    color: var(--primary-text-color);
+    font-size: 16px;
+    background-image: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    transition: background 1s ease-in-out;
+}
+
+#timer, #score {
+    position: fixed;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    padding: 10px 20px; /* Mais espaçamento */
+    border-radius: 10px; /* Borda arredondada */
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 9999; /* Garante que fique na frente de outros elementos */
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Timer um pouco abaixo do nav */
+#timer {
+    top: 5.5rem; /* Ajuste para ficar logo abaixo do nav */
+    left: 10px; /* Lado esquerdo da tela */
+}
+
+/* Score ao lado das perguntas */
+#score {
+    position: absolute;
+    top: 10rem; /* Posiciona o score ao lado das perguntas */
+    right: 10px;
+    z-index: 999; /* Para garantir que sobreponha outros elementos */
+}
+
+/* Estado de aviso no timer */
+#timer.warning {
+    background-color: rgba(255, 165, 0, 0.7);
+}
+
+/* Estado de tempo esgotado no timer */
+#timer.timeup {
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+/* Restante do CSS */
+#quiz-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    max-width: 600px;
+    width: 100%;
+    margin-top: 5rem; /* Garante que o quiz não fique por trás do nav */
+}
+
+#question {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.correct {
+    background-color:var(--green);
+    color: white;
+    border: 2px solid var(--green);
+  }
+  
+  .incorrect {
+    background-color:var(--red);
+    color: white;
+    border: 2px solid #9c3535;
+  }
+
+button {
+    background-color: #ffffff;
+    border: none;
+    color: #173A59;
+    padding: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #quiz-container {
+        padding: 15px;
+    }
+
+    #question {
+        font-size: 1.6rem;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    #timer, #score {
+        font-size: 1rem;
+    }
+}

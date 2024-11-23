@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Brown Sugar';
+    src: url('/fonte/Brown-Sugar.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow-Regular';
+    src: url('/fonte/Barlow-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --primary-text-color: rgba(0, 0, 0, 1);
+    --secondary-text-color: #FFFFFF;
+    --color-start: #FFFFFF;
+    --color-mid1: #B9C9DF;
+    --color-mid2: #C1D0E2;
+    --color-end: #7E9CC3;
+    --color-endb: #C7D1DE;
+    --white: #FFFFFF;
+    --purple: #9B59B6;
+
+}
+
+body.escuro {
+    --primary-text-color: #FFFFFF;
+    --secondary-text-color: rgba(0, 0, 0, 1);
+    --color-start: #96A9C2;
+    --color-mid1: #2B3D54;
+    --color-mid2: #2B3D54;
+    --color-end: #001228;
+    --color-endb: #173A59;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    display:flex;
+    justify-content: center;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url('/imgs/fundo\ quiz.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    color: var(--primary-text-color);
+}
+
+header img {
+    max-width: 12.5rem;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    display: flex;
+    padding-right: 5rem;
+    padding-left: 2rem;
+}
+
+main{
+    width: 100vw;
+}
+
+#baixo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    align-content: center;
+    gap: 1rem;
+}
+
+#p{
+    font-family: 'Barlow-Regular';
+    /* margin-left: 150px; */
+    display: flex;
+    /* width: 50%; */
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+}
+
+#baixo p {
+    width: 500px;
+    font-size: 31.5px;
+    text-align: center;
+}
+
+
+
+#quiz {
+    align-items: center;
+    color: white;
+    font-family: 'Brown Sugar';
+    font-size: 5rem;
+    margin-bottom: 25px;
+}
+
+
+#botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 170px;
+    border-radius: 99px;
+    border: 0;
+    background-color: #001228;
+    color: white;
+    cursor: pointer;
+}
+
+#baixo a{
+    text-decoration: none;
+}

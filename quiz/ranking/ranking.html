@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ranking.css">
+    <link rel="stylesheet" href="/conteudo.css/nav.css">
+    <link rel="stylesheet" href="/conteudo.css/botao.css">
+    <link rel="icon" type="image/png" href="/imgs/logo.png">
+    <script src="./ranking.js" defer ></script>
+    <script src="/zjava-banco/rankingtoken.js" defer type="module"></script> <!--banco de dados--> 
+    <title>Escolher Conteúdo</title>
+</head>
+<body>
+    <nav class="barra">
+        <div class="logo">
+            <a href="/index.html">
+                <img src="/imgs/logo.png" alt="Logo da equipe do site">
+            </a>
+        </div>
+
+        <div class="direita">
+            <ul class="nav-links">
+                <li class="link"><a href="/conteudo/escolher_cont.html">CONTEÚDO</a></li>
+                <li class="link"><a href="/criadores.html">SOBRE</a></li>
+                <li class="link"><a href="/quiz/quiz.html">QUIZ</a></li>
+            </ul>
+
+            <div class="user">
+                <p></p>
+                <button>Sair</button>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="leaderboard-container">
+        <table class="leaderboard">
+          <thead>
+            <tr>
+              <th>POSIÇÃO</th>
+              <th>PLAYER</th>
+              <th>TEMPO</th>
+              <th>PONTOS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="/imgs/prime 1.png" alt="1st" class="medal-icon"></td>
+              <td id="1name">nomes</td>
+              <td id="1time">tempos</td>
+              <td id="1points">poitnss</td>
+            </tr>
+            <tr>
+              <td><img src="/imgs/segun 1.png" alt="2nd" class="medal-icon"></td>
+              <td id="2name">Lucas Andrade</td>
+              <td id="2time">02:30.55</td>
+              <td id="2points">141</td>
+            </tr>
+            <tr>
+              <td><img src="/imgs/terce 1.png" alt="3rd" class="medal-icon"></td>
+              <td id="3name">Lucas Andrade</td>
+              <td id="3time">02:30.55</td>
+              <td id="3points">120</td>
+            </tr>
+            <tr>
+              <td><img src="/imgs/burro 1.png" alt="1st" class="medal-icon"></td>
+              <td id="4name">Lucas Andrade</td>
+              <td id="4time">02:30.55</td>
+              <td id="4points">110</td>
+            </tr>
+            <tr>
+                <td><img src="/imgs/burro 1.png" alt="1st" class="medal-icon"></td>
+                <td id="5name">Lucas Andrade</td>
+                <td id="5time">02:30.55</td>
+                <td id="5points">100</td>
+              </tr>
+              <tr>
+                <td><img src="/imgs/burro 1.png" alt="1st" class="medal-icon"></td>
+                <td id="6name">Lucas Andrade</td>
+                <td id="6time">02:30.55</td>
+                <td id="6points">80</td>
+              </tr>
+          </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+        </label>
+    </footer>
+
+    <script src="/conteudo.js/zz-simg.js"></script>
+    <script src="https://kit.fontawesome.com/751d0122f8.js" crossorigin="anonymous"></script>
+</body>
+</html>

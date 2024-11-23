@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Brown Sugar';
+    src: url('/fonte/Brown-Sugar.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: rgba(0, 0, 0, 1);
+    --secondary-text-color: #FFFFFF;
+    --color-start: #FFFFFF;
+    --color-mid1: #B9C9DF;
+    --color-mid2: #C1D0E2;
+    --color-end: #7E9CC3;
+    --color-endb: #C7D1DE;
+    --white: #FFFFFF;
+}
+
+
+
+body {
+    background: linear-gradient(to left, var(--color-start) 0%, var(--color-endb) 100%);
+    color: var(--primary-text-color);
+    font-size: 16px;
+}
+
+
+.fatores{
+    margin-top: 80px;
+}
+
+
+.solzasso {
+    display: flex;
+    height: auto;
+    max-width: 10rem;
+    margin-top: 20px;
+}
+
+.elementoss {
+    display: flex;
+    height: auto;
+    max-width: 10rem;
+}
+
+.zonclima {
+    display: flex;
+    height: 100px;
+    max-width: 100px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    gap: 3rem;
+}
+
+img{
+    max-height: 125px;
+}
+
+.fatores,
+.elementos,
+.zonas {
+    width: 100%;
+    max-width: 1200px;
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(67, 87, 114);
+    border-radius: 0.625rem;
+    color: var(--white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.164);
+    text-align: center;
+    justify-content: flex-end;
+    text-decoration: none;
+
+    
+}
+
+.fatores a,
+.elementos a,
+.zonas a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.fatores h2,
+.elementos h2,
+.zonas h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+
+.fatores img,
+.elementos img,
+.zonas img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    bottom: 2%;
+    margin-left: 20px;
+    padding: 10px;
+    left: 0;
+}

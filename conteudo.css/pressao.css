@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Barlow-Regular';
+    src: url('/fonte/Barlow-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brown Sugar';
+    src: url('/fonte/Brown-Sugar.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: rgba(0, 0, 0, 1);
+    --secondary-text-color: #FFFFFF;
+    --color-start: #FFFFFF;
+    --color-mid1: #B9C9DF;
+    --color-mid2: #C1D0E2;
+    --color-end: #7E9CC3;
+    --color-endb: #C7D1DE;
+    --white: #FFFFFF;
+}
+
+body.escuro {
+    --primary-text-color: #FFFFFF;
+    --secondary-text-color: rgba(0, 0, 0, 1);
+    --color-start: #96A9C2;
+    --color-mid1: #2B3D54;
+    --color-mid2: #2B3D54;
+    --color-end: #001228;
+    --color-endb: #173A59;
+}
+
+body,html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    background: linear-gradient(to left, var(--color-start) 0%, var(--color-endb) 100%);
+    color: var(--primary-text-color);
+}
+
+nav {
+    background: linear-gradient(to left, var(--color-start) 0%, var(--color-end) 100%);
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    max-width: 5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.link a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.link a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--secondary-text-color);
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 85%;
+    width: 100%;
+
+}
+
+.conteúdo {
+    flex: 1;
+    max-width: 50%;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 5rem;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 5rem;
+    font-family: 'Brown Sugar', cursive;
+}
+
+.container p {
+    font-family: 'Barlow-Regular';
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+
+
+.pressao-img {
+    border-radius: 5rem;
+    max-width: 30rem;
+    height: auto;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsividade  oxe*/
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteúdo {
+        max-width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .pressao-img {
+        max-width: 100%;
+    }
+}

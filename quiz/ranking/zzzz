@@ -1,0 +1,88 @@
+
+
+    <main>
+        <div class="cima">
+            <div class="esquerda">
+                <p>posição</p>
+                <p>player</p>
+            </div>
+            <div class="direita">
+                <p>tempo</p>
+                <p>questões</p>
+            </div>
+        </div>
+        <section class="blocos">
+
+            <div id="primeira" class="claro">
+                <div class="esquerda">
+                    <img src="/imgs/prime 1.png" alt="">
+                    <p>Lucas</p>
+                </div>
+                <div class="direita">
+                    <p>123s</p>
+                    <p>10/10</p>
+                </div>
+            </div>
+
+            <div id="segunda" class="escuro">
+                <div class="esquerda">
+                    <img src="/imgs/segun 1.png" alt="">
+                    <p>Lucas</p>
+                </div>
+                <div class="direita">
+                    <p>123s</p>
+                    <p>10/10</p>
+                </div>
+            </div>
+
+            <div id="terceiro" class="claro">
+                <img src="/imgs/terce 1.png" alt="">
+            </div>
+
+            <div id="quarta" class="escuro">
+                <img src="/imgs/burro 1.png" alt="">
+            </div>
+
+            <div id="quinta" class="claro">
+                <img src="/imgs/burro 1.png" alt="">
+            </div>
+
+            <div id="sexta" class="escuro">
+                <img src="/imgs/burro 1.png" alt="">
+            </div>
+
+            <div id="setima" class="claro">
+                <img src="/imgs/burro 1.png" alt="">
+            </div>
+
+        </section>
+    </main>
+
+
+
+    async function carregarRanking() {
+        try {
+            const response = await fetch('/rank');
+            if (!response.ok) throw new Error('Erro ao buscar ranking');
+            
+            const ranking = await response.json();
+    
+            // Renderizar o ranking no front-end
+            const rankingContainer = document.getElementById('ranking');
+            rankingContainer.innerHTML = '';
+    
+            ranking.forEach((jogador, index) => {
+                rankingContainer.innerHTML += `
+                    <div class="jogador">
+                        <span>${index + 1}º - ${jogador.userName}</span>
+                        <span>Pontos: ${jogador.points}</span>
+                        <span>Tempo: ${jogador.time}s</span>
+                        <span>Score: ${jogador.score}</span>
+                    </div>
+                `;
+            });
+        } 
+        catch (error) {
+            console.error(error.message);
+        }
+    }

@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Barlow-Regular';
+    src: url('/fonte/Barlow-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.barra {
+    background: linear-gradient(to left, var(--color-start) 0%, var(--color-end) 100%);
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 5rem;
+    height: auto;
+}
+
+.direita{
+    display: flex;
+    gap: 3rem;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.user {
+    color: var(--primary-text-color);
+    font-size: 18px;
+    font-family: Barlow-Regular;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.user button{
+    font-size: 18px;
+    font-family: Barlow-Regular;
+    background: var(--color-mid1);
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+    border: 4px solid var(--color-mid1);
+    padding: 0.4rem 1.3rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.user button:hover{
+    background: #FF0044;
+    border-color: #FF0044;
+    transition: .7s;
+}
+
+.link a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: Barlow-Regular;
+}
+
+.link a:hover {
+    background-color: rgba(196, 40, 40, 0.1);
+    color: var(--secondary-text-color);
+}
+
