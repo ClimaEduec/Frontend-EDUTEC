@@ -3,7 +3,7 @@ export async function getName(){
     if(!token){
         return
     }
-    const response = await fetch("https://3000-climaedutec-edutecbacke-5bf85btxnqt.ws-us116.gitpod.io/getname",{
+    const response = await fetch("https://3000-climaeduec-backendedute-igjilfarbj7.ws-us116.gitpod.io/getname",{
         headers: {
             "Authorization": token
         }

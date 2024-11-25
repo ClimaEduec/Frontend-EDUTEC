@@ -21,51 +21,20 @@ async function results(){
     }
 
 
-    const response = await fetch("https://3000-climaedutec-edutecbacke-5bf85btxnqt.ws-us116.gitpod.io/results",{
+    const response = await fetch("https://3000-climaeduec-backendedute-igjilfarbj7.ws-us116.gitpod.io/results",{
         method: "POST",
         headers:{
-            "Content-Type": "application/json", //enviou o match prara o banco
+            "Content-Type": "application/json",
             "Authorization": token
         },
         body: JSON.stringify({match})
     })
-    alert("passou por  td fiot")
     //.then(response => response.json()) //depois de pegar a responsta do banco ----- preciso?
     //alert(response.message)
 }
 
 results()
 
-/*
-    if(name == "" || email == "" || password == "" || passwordConfirmation =="" || date == "") {
-        alert("Preencha todas as informações!")
-        return
-    }*/
-
-
-
-
-
-/*function mostrarResultado() {
-    const main = document.querySelector('main');
-    main.innerHTML = `
-        <section>
-            <h2>Resultado Final</h2>
-            <p>Você acertou ${respostasCorretas} de ${quizData.quizzes[0].questions.length} perguntas.</p>
-            <button id="reiniciar">Reiniciar Quiz</button>
-            <button id="voltar">iívio</button>
-        </section>
-    `;
-
-    document.getElementById('reiniciar').addEventListener('click', () => {
-        perguntaAtual = 0;
-        respostasCorretas = 0;
-        questionsAnswered.value = 0; // Reinicia o número de perguntas respondidas
-        carregarPergunta();
-    });
-
-    document.getElementById('voltar').addEventListener('click', openDialog);
-}*/
 
 
 

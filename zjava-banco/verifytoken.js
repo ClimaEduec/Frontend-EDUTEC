@@ -7,7 +7,7 @@ export async function verifyToken(url) {
     }
 
 
-    const response = await fetch("https://3000-climaedutec-edutecbacke-5bf85btxnqt.ws-us116.gitpod.io/verify", {
+    const response = await fetch("https://3000-climaeduec-backendedute-igjilfarbj7.ws-us116.gitpod.io/verify", {
         headers:{
             "Authorization": token
         }
