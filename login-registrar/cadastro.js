@@ -24,7 +24,7 @@ async function register(){
     }
 
 
-    const response = await fetch("https://3000-climaeduec-backendedute-igjilfarbj7.ws-us116.gitpod.io/register",{
+    const response = await fetch("https://climaedutecbackend.vercel.app/register",{
         method: "POST",
         headers:{
             "Content-Type": "application/json" //enviou o user prara o banco

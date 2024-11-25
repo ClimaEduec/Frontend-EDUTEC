@@ -21,7 +21,7 @@ async function results(){
     }
 
 
-    const response = await fetch("https://3000-climaeduec-backendedute-igjilfarbj7.ws-us116.gitpod.io/results",{
+    const response = await fetch("https://climaedutecbackend.vercel.app/results",{
         method: "POST",
         headers:{
             "Content-Type": "application/json",

@@ -10,7 +10,7 @@ async function login(){
         password
     }
 
-    const response = await fetch("https://3000-climaeduec-backendedute-igjilfarbj7.ws-us116.gitpod.io/login", {
+    const response = await fetch("https://climaedutecbackend.vercel.app/login", {
         method: "POST",
         headers:{
             "Content-Type": "application/json"

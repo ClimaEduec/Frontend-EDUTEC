@@ -26,7 +26,7 @@ async function getRank(){
 async function carregarRanking() {
     try {
         
-        const response = await fetch('https://3000-climaeduec-backendedute-igjilfarbj7.ws-us116.gitpod.io/rank');
+        const response = await fetch('https://climaedutecbackend.vercel.app/rank');
         if (!response.ok) throw new Error('Erro ao buscar o ranking');
         const ranking = await response.json();
         const tbody = document.querySelector('.leaderboard tbody');
