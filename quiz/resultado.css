@@ -232,3 +232,7 @@ a{
 .botaozao footer{
     margin-left: -1050px;
 }
+
+.baixo{
+    gap: 0.5 rem;
+}
